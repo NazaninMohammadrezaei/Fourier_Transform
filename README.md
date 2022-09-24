@@ -13,6 +13,16 @@ Also file names are representative of their content , but here is an explanation
 `02 FFT and IFFT` : Implementing Discrete Time Fourier Transform and its inverse, using fft and ifft, provided in the scipy library
 
 `03 FFT on matrices` : Using fft on 2d arrays
+
+`04 Freq resolution and zero-padding` : Understanding the concept of frequency resolution and the impacts of zero-padding both in time and frequency domain
+
+`05 Aliasing` : Understanding how to choose a proper sampling rate to avoid aliasing
+
+`Application_01_EEG` : Analyzing the amplitude spectrum of a brain wave
+
+`Application_02_LPF_on_Image` : Application of gaussian low pass filters to smoothen an image
+
+`Application_03_Sine_Wave_Gradients` : Filtering an image composed of two sine wave gradients with a 45 degree phase difference
 <br><br>
 
 ## Discrete Time Fourier Transform
