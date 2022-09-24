@@ -43,3 +43,27 @@ We also applied fft along the columns (over the time); Because the periodic wave
 
 ![Figure_3](https://user-images.githubusercontent.com/88426435/192085775-586118d1-4880-4c66-8a5f-184b056a79a6.png)
 
+## Frequency resolution and Zero-padding
+
+![Figure_1](https://user-images.githubusercontent.com/88426435/192090120-aa6d0eca-2f83-404b-929e-7ee770457527.png)
+
+![TDZP_nonmanual](https://user-images.githubusercontent.com/88426435/192090128-d53ff242-51cd-4242-90b2-62b391208a7d.png)
+
+![fDZP_nonmanual](https://user-images.githubusercontent.com/88426435/192090133-17f471d9-3ba0-4977-8912-e16bc9a93d78.png)
+
+## Aliasing
+
+![aliasing](https://user-images.githubusercontent.com/88426435/192090153-5e1f04a9-e84c-447e-88fb-f51beaba48e0.png)
+
+## Application 1: The rythmicity of EEG data
+
+![untitled3](https://user-images.githubusercontent.com/88426435/192090329-9c3ffb7a-6e1b-4fa7-86ee-dcbee224c238.png)
+
+
+## Application 2: Low Pass Filtering an image
+
+![untitled2](https://user-images.githubusercontent.com/88426435/192090335-9e17eeee-d0c6-4670-a41b-57567b99860b.png)
+
+## Application 3: Filtering an image composed of two sine wave gradients
+
+![untitled](https://user-images.githubusercontent.com/88426435/192090342-639c7a4b-5d5c-4f6f-8c98-891a724214ce.png)
