@@ -53,17 +53,29 @@ We also applied fft along the columns (over the time); Because the periodic wave
 
 ## Aliasing
 
+The original signal is a sine wave with 10 Hz frequency. 
+Aliasing happened when sampling frequency was lower that nyquist rate of the signal. (which is 2*10)
+Theoritically, a sampling frequency of `2*the higher bound of signal` is enough, but practically, sampling frequencies of around `5*the higher bound of signal` are appropriate.
+
 ![aliasing](https://user-images.githubusercontent.com/88426435/192090153-5e1f04a9-e84c-447e-88fb-f51beaba48e0.png)
 
+
 ## Application 1: The rythmicity of EEG data
+
+For this brain signal, two peaks are witnessed at 10 Hz (related to brain alpha waves), and 50 Hz (related to power supply noise)
 
 ![untitled3](https://user-images.githubusercontent.com/88426435/192090329-9c3ffb7a-6e1b-4fa7-86ee-dcbee224c238.png)
 
 
 ## Application 2: Low Pass Filtering an image
 
+Applying a gaussian low pass filter makes the image smoother.
+
 ![untitled2](https://user-images.githubusercontent.com/88426435/192090335-9e17eeee-d0c6-4670-a41b-57567b99860b.png)
 
+
 ## Application 3: Filtering an image composed of two sine wave gradients
+
+The image is composed of two sine waves with a 45 degree phase difference. I applied frequency-domain filtering on the image by excluding the parts of amplitude spectrum which corresponds to the first sine wave. Afterwards, we expect to get a filtered image which is so similar to a sine wave with a phase of 45 degrees. It's like we removed the first sine wave gradient from the image.
 
 ![untitled](https://user-images.githubusercontent.com/88426435/192090342-639c7a4b-5d5c-4f6f-8c98-891a724214ce.png)
