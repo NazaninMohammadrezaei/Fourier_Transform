@@ -45,9 +45,15 @@ We also applied fft along the columns (over the time); Because the periodic wave
 
 ## Frequency resolution and Zero-padding
 
+Here, we manually added zeros to the end of our signal. In this figure, we can see how zero-padding in the time domain affects the frequency domain.
+
 ![Figure_1](https://user-images.githubusercontent.com/88426435/192090120-aa6d0eca-2f83-404b-929e-7ee770457527.png)
 
+Here, we see how zero-padding in the time domain using the fft command (not manually) affects the amplitude spectrum of the signal.
+
 ![TDZP_nonmanual](https://user-images.githubusercontent.com/88426435/192090128-d53ff242-51cd-4242-90b2-62b391208a7d.png)
+
+And here, we see how zeropadding in the frequency domain, affects the reconstructed signal.
 
 ![fDZP_nonmanual](https://user-images.githubusercontent.com/88426435/192090133-17f471d9-3ba0-4977-8912-e16bc9a93d78.png)
 
@@ -55,7 +61,7 @@ We also applied fft along the columns (over the time); Because the periodic wave
 
 The original signal is a sine wave with 10 Hz frequency. 
 Aliasing happened when sampling frequency was lower that nyquist rate of the signal. (which is 2*10)
-Theoritically, a sampling frequency of `2*the higher bound of signal` is enough, but practically, sampling frequencies of around `5*the higher bound of signal` are appropriate.
+Theoritically, a sampling frequency of `2*the higher bound of signal` is enough, but practically, sampling frequencies of around `5*the higher bound of signal` are much more approriate.
 
 ![aliasing](https://user-images.githubusercontent.com/88426435/192090153-5e1f04a9-e84c-447e-88fb-f51beaba48e0.png)
 
@@ -76,6 +82,6 @@ Applying a gaussian low pass filter makes the image smoother.
 
 ## Application 3: Filtering an image composed of two sine wave gradients
 
-The image is composed of two sine waves with a 45 degree phase difference. I applied frequency-domain filtering on the image by excluding the parts of amplitude spectrum which corresponds to the first sine wave. Afterwards, we expect to get a filtered image which is so similar to a sine wave with a phase of 45 degrees. It's like we removed the first sine wave gradient from the image.
+The image is composed of two sine waves with a 45 degree phase difference. I applied frequency-domain filtering on the image by excluding the parts of amplitude spectrum which corresponds to the first sine wave. Afterwards, we get a filtered image which is only contains a sine wave with a phase of 45 degrees. It's like we removed the first wave gradient from the image.
 
 ![untitled](https://user-images.githubusercontent.com/88426435/192090342-639c7a4b-5d5c-4f6f-8c98-891a724214ce.png)
