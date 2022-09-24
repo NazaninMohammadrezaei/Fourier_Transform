@@ -23,18 +23,23 @@ An step-by-step process to apply fourier transform on a sample signal: 2.5sin(2�
 
 ## FFT and IFFT
 The fft of a simple sine wave: 2sine(2π6) 
+
 ![02_1](https://user-images.githubusercontent.com/88426435/192085215-66126821-d367-471e-808d-f67b9b29bfe7.png)
 
 Then, we generated a multivariate signal, applied fft on the signal, and reconstructed it using ifft.
-![02_2](https://user-images.githubusercontent.com/88426435/192085495-65e754dc-2d58-41ac-badc-9b88f6763a75.png)
 
+![02_2](https://user-images.githubusercontent.com/88426435/192085495-65e754dc-2d58-41ac-badc-9b88f6763a75.png)
 
 ## FFT on matrices
 The data is a 2d repeating sine wave.
+
 ![Figure_1](https://user-images.githubusercontent.com/88426435/192085544-5180b499-1e42-4fb2-9459-fa502f26799b.png)
 
 We applied fft along the rows (over the channels); Because the periodic waves are repeating over time and not channels ,we expect not to see a meaningful diagram.
-![Uploading Figure_2.png…]()
+
+![Figure_2](https://user-images.githubusercontent.com/88426435/192085769-f3da5320-5072-4f32-9379-6cba22b7d14f.png)
 
 We also applied fft along the columns (over the time); Because the periodic waves are repeating over time ,we expect to see a meaningful amplitude spectrum.
+
+![Figure_3](https://user-images.githubusercontent.com/88426435/192085775-586118d1-4880-4c66-8a5f-184b056a79a6.png)
 
